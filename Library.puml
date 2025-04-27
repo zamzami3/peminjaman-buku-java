@@ -1,0 +1,18 @@
+@startuml
+abstract class method.Item
+annotation java.lang.Override
+class java.util.ArrayList
+class java.util.List
+class method.Admin
+class method.Book
+class method.Library
+class method.Loan
+class method.Magazine
+class method.Member
+method.Book --|> method.Item
+method.Book ..> java.lang.Override
+method.Library ..> java.util.ArrayList
+method.Library ..> java.util.List
+method.Magazine --|> method.Item
+method.Magazine ..> java.lang.Override
+@enduml
